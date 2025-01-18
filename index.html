@@ -3,140 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Negroacsaszar Kaszinó Vélemények</title>
+    <title>Negroacsaszar Kaszinó és CS2 Bónuszok</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #2e7d32, #a5d6a7);
+            background-color: #f0f9f5;
             color: #333;
         }
         header {
-            background-color: #004d40;
+            background-color: #2e7d32;
             color: white;
-            padding: 40px 20px;
+            padding: 20px 0;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0;
         }
         header p {
-            font-size: 1.5em;
-            margin: 10px 0 0;
+            font-size: 1.2em;
+            margin: 5px 0 0;
         }
         .container {
             max-width: 1200px;
             margin: 30px auto;
             padding: 0 15px;
         }
-        .casino {
-            background: white;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+        .section {
+            margin-bottom: 50px;
         }
-        .casino:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .casino img {
-            width: 100%;
-            height: auto;
-        }
-        .casino-content {
-            padding: 20px;
-        }
-        .casino h2 {
+        .section h2 {
             font-size: 2em;
-            margin: 0 0 10px;
-            color: #004d40;
+            color: #2e7d32;
+            margin-bottom: 20px;
         }
-        .casino p {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table thead {
+            background-color: #43a047;
+            color: white;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table tr:hover {
+            background-color: #e8f5e9;
+        }
+        table th {
             font-size: 1.2em;
-            line-height: 1.6;
-            color: #555;
         }
-        .casino a {
+        table td img {
+            width: 100px;
+            border-radius: 5px;
+        }
+        .cta {
             display: inline-block;
-            margin-top: 15px;
-            padding: 14px 22px;
-            background-color: #388e3c;
+            padding: 10px 20px;
+            background-color: #2e7d32;
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
             border-radius: 5px;
-            transition: background-color 0.3s, box-shadow 0.3s;
+            font-size: 1em;
+            transition: background-color 0.3s;
         }
-        .casino a:hover {
+        .cta:hover {
+            background-color: #1b5e20;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
             background-color: #2e7d32;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: white;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #c8e6c9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Negroacsaszar Kaszinó Vélemények</h1>
-        <p>Fedezd fel a legjobb platformokat izgalmas bónuszokkal és lenyűgöző játékokkal.</p>
+        <h1>NEGRO Kaszinó Bónuszok</h1>
+        <p>Találd meg a legjobb kaszinó ajánlatokat és CS2 bónuszokat!</p>
     </header>
     <div class="container">
-        <div class="about">
-            <h2>Rólam</h2>
-            <p>Szia! A nevem Markó, és a Twitch csatornámon, a Negroacsaszar-on keresztül építek közösséget a kaszinórajongók számára. Szenvedélyem az online játékok és a közösségépítés, ahol mindig arra törekszem, hogy izgalmas és megbízható platformokat mutassak be. Csatlakozz hozzám, és fedezzük fel együtt a legjobb online kaszinókat!</p>
+        <div class="section">
+            <h2>Kaszinó Bónuszok</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kaszinó</th>
+                        <th>Bónusz</th>
+                        <th>Leírás</th>
+                        <th>Csatlakozz</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/100" alt="Spinarium Kaszinó"></td>
+                        <td>200% + 100 ingyen pörgetés</td>
+                        <td>A Spinarium Kaszinó mobilbarát platformmal, kriptovaluta elfogadással és CS2 skinekkel is feltölthető egyenleggel vár.</td>
+                        <td><a href="https://spinarium.cc/df1808320" class="cta" target="_blank">Játssz most</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/100" alt="VAVADA Kaszinó"></td>
+                        <td>100 ingyen pörgetés</td>
+                        <td>Élő osztós játékok és gyors kifizetések. Könnyű regisztrációval.</td>
+                        <td><a href="https://partnervavadarv.com/?promo=62a8d131-eaf2-4826-898f-7f40216e6be5&target=register" class="cta" target="_blank">Játssz most</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://fairspin.io/logo.png" alt="FAIRSPIN Kaszinó"></td>
+                        <td>200% bónusz</td>
+                        <td>Blockchain alapú átláthatóság és valós idejű nyeremény követés.</td>
+                        <td><a href="https://fairspin-h.click/63944/1?l=2" class="cta" target="_blank">Játssz most</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/100" alt="WEISS Kaszinó"></td>
+                        <td>150% első befizetés</td>
+                        <td>Jackpot játékok és hűségprogram bőséges jutalmakkal.</td>
+                        <td><a href="https://bonafides.rocks/63944/1261?l=3751" class="cta" target="_blank">Játssz most</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="casino">
-            <img src="https://via.placeholder.com/1200x400" alt="Spinarium Kaszinó">
-            <div class="casino-content">
-                <h2>Spinarium Kaszinó</h2>
-                <p>A Spinarium Kaszinó biztonságos és izgalmas játékélményt kínál gyors kifizetésekkel és 24/7 ügyfélszolgálattal. 
-                   Üdvözlő bónusz: Szerezz akár 200%-os bónuszt az első befizetésedre 40x-es megforgatási követelménnyel, 
-                   valamint 100 ingyen pörgetést 25x-ös megforgatási követelménnyel! 
-                   Kiemelt játékok: Crash, Coinflip, Tower. Az oldal mobilbarát és kriptovaluta elfogadással is működik.</p>
-                <a href="https://spinarium.cc/df1808320" target="_blank">Látogass el a Spinarium Kaszinó oldalára</a>
-            </div>
-        </div>
-        <div class="casino">
-            <img src="https://via.placeholder.com/1200x400" alt="VAVADA Kaszinó">
-            <div class="casino-content">
-                <h2>VAVADA Kaszinó</h2>
-                <p>A VAVADA Kaszinó modern játékélményt kínál izgalmas promóciókkal és gyors kifizetésekkel. 
-                   Üdvözlő bónusz: Szerezz akár 100 ingyen pörgetést regisztrációkor! 
-                   Híres az élő osztós játékaikról, és könnyű regisztrációval csábít. A platform támogatja a hagyományos és kriptovalutás fizetéseket is.</p>
-                <a href="https://partnervavadarv.com/?promo=62a8d131-eaf2-4826-898f-7f40216e6be5&target=register" target="_blank">Látogass el a VAVADA Kaszinó oldalára</a>
-            </div>
-        </div>
-        <div class="casino">
-            <img src="https://fairspin.io/logo.png" alt="FAIRSPIN Kaszinó">
-            <div class="casino-content">
-                <h2>FAIRSPIN Kaszinó</h2>
-                <p>A FAIRSPIN Kaszinó kriptovaluta-barát játékélményt nyújt és átlátható bónuszfeltételekkel vár. 
-                   Üdvözlő bónusz: Akár 200%-os bónusz az első befizetésedre! A kaszinó különlegessége a blockchain alapú 
-                   átláthatóság és valós idejű nyeremények nyomon követése.</p>
-                <a href="https://fairspin-h.click/63944/1?l=2" target="_blank">Látogass el a FAIRSPIN Kaszinó oldalára</a>
-            </div>
-        </div>
-        <div class="casino">
-            <img src="https://via.placeholder.com/1200x400" alt="WEISS Kaszinó">
-            <div class="casino-content">
-                <h2>WEISS Kaszinó</h2>
-                <p>A WEISS Kaszinó egyszerű és gyors regisztrációval, valamint változatos játékokkal csábít. 
-                   Üdvözlő bónusz: Akár 150%-os bónusz az első három befizetésedre! A kaszinó nagy hangsúlyt fektet a jackpot játékokra 
-                   és a hűségprogramra, amely bőséges jutalmakkal várja a játékosokat.</p>
-                <a href="https://bonafides.rocks/63944/1261?l=3751" target="_blank">Látogass el a WEISS Kaszinó oldalára</a>
-            </div>
+        <div class="section">
+            <h2>Counter Strike 2 BÓNUSZOK</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Bónusz</th>
+                        <th>Leírás</th>
+                        <th>Csatlakozz</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/100" alt="KEYDROP"></td>
+                        <td>Promó kód: CUKOR</td>
+                        <td>Használd a promó kódot, hogy extra bónuszokat szerezz a KeyDrop platformján! 10% feltöltési bónusz és 0.5 dollár ajándék vár rád!</td>
+                        <td><a href="https://key-drop.com/?code=CUKOR" class="cta" target="_blank">Próbáld ki most</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/100" alt="GGDROP"></td>
+                        <td>Promó kód: NEGRO</td>
+                        <td>Használd a NEGRO promó kódot, hogy extra bónuszokat kapj a GGDrop platformon! Tökéletes CS2 rajongóknak.</td>
+                        <td><a href="https://ggdrop.art/negroacsaszar" class="cta" target="_blank">Próbáld ki most</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <footer>
-        <div style="text-align: center; padding: 20px; background-color: #004d40; color: white;">
-            <h2>Kövess engem a közösségi médiában!</h2>
-            <a href="https://discord.gg/YmzEfbufXr" target="_blank" style="margin: 0 10px; color: #1e90ff; text-decoration: none; font-size: 1.2em;">Discord</a>
-            <a href="https://www.instagram.com/markonegroka/" target="_blank">Instagram</a>
-            <a href="https://t.me/negromarko" target="_blank" style="margin: 0 10px; color: #0088cc; text-decoration: none; font-size: 1.2em;">Telegram</a>
-        </div>
+        <p>Kövess engem a közösségi médiában: 
+            <a href="https://discord.gg/YmzEfbufXr" target="_blank">Discord</a> | 
+            <a href="https://www.instagram.com/markonegroka/" target="_blank">Instagram</a> | 
+            <a href="https://t.me/negromarko" target="_blank">Telegram</a>
+        </p>
     </footer>
 </body>
 </html>
