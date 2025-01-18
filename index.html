@@ -18,6 +18,14 @@
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 80px;
+            height: auto;
         }
         header h1 {
             font-size: 2.5em;
@@ -81,6 +89,27 @@
         .cta:hover {
             background-color: #1b5e20;
         }
+        .info-button {
+            cursor: pointer;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .info-button:hover {
+            background-color: #388e3c;
+        }
+        .info-box {
+            display: none;
+            background-color: #e8f5e9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -97,10 +126,21 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        function toggleInfo(id) {
+            const infoBox = document.getElementById(id);
+            if (infoBox.style.display === "none" || infoBox.style.display === "") {
+                infoBox.style.display = "block";
+            } else {
+                infoBox.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>NEGRO Kaszinó Bónuszok</h1>
+        <img src="logo.png" alt="NEGRO logo">
+        <h1>NEGRO Kaszinó és CS2 Bónuszok</h1>
         <p>Találd meg a legjobb kaszinó ajánlatokat és CS2 bónuszokat!</p>
     </header>
     <div class="container">
@@ -120,31 +160,55 @@
                         <td><img src="https://via.placeholder.com/100" alt="Spinarium Kaszinó"></td>
                         <td>200% + 100 ingyen pörgetés</td>
                         <td>A Spinarium Kaszinó mobilbarát platformmal, kriptovaluta elfogadással és CS2 skinekkel is feltölthető egyenleggel vár.</td>
-                        <td><a href="https://spinarium.cc/df1808320" class="cta" target="_blank">Játssz most</a></td>
+                        <td>
+                            <a href="https://spinarium.cc/df1808320" class="cta" target="_blank">Játssz most</a>
+                            <button class="info-button" onclick="toggleInfo('spinarium-info')">Több infó</button>
+                            <div id="spinarium-info" class="info-box">
+                                A Spinarium Kaszinó 200%-os befizetési bónuszt és 100 ingyen pörgetést kínál új játékosok számára. Kriptovaluták elfogadása és gyors kifizetések.
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="https://via.placeholder.com/100" alt="VAVADA Kaszinó"></td>
                         <td>100 ingyen pörgetés</td>
                         <td>Élő osztós játékok és gyors kifizetések. Könnyű regisztrációval.</td>
-                        <td><a href="https://partnervavadarv.com/?promo=62a8d131-eaf2-4826-898f-7f40216e6be5&target=register" class="cta" target="_blank">Játssz most</a></td>
+                        <td>
+                            <a href="https://partnervavadarv.com/?promo=62a8d131-eaf2-4826-898f-7f40216e6be5&target=register" class="cta" target="_blank">Játssz most</a>
+                            <button class="info-button" onclick="toggleInfo('vavada-info')">Több infó</button>
+                            <div id="vavada-info" class="info-box">
+                                A VAVADA Kaszinó 100 ingyen pörgetést biztosít új játékosainak. Élvezd az élő osztós játékokat és a könnyű regisztrációt.
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="https://fairspin.io/logo.png" alt="FAIRSPIN Kaszinó"></td>
                         <td>200% bónusz</td>
                         <td>Blockchain alapú átláthatóság és valós idejű nyeremény követés.</td>
-                        <td><a href="https://fairspin-h.click/63944/1?l=2" class="cta" target="_blank">Játssz most</a></td>
+                        <td>
+                            <a href="https://fairspin-h.click/63944/1?l=2" class="cta" target="_blank">Játssz most</a>
+                            <button class="info-button" onclick="toggleInfo('fairspin-info')">Több infó</button>
+                            <div id="fairspin-info" class="info-box">
+                                A FAIRSPIN Kaszinó 200%-os bónuszokat és blockchain alapú átláthatóságot kínál. Kövesd a nyereményeidet valós időben!
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="https://via.placeholder.com/100" alt="WEISS Kaszinó"></td>
+                        <td><img src="weiss_logo.png" alt="WEISS Kaszinó"></td>
                         <td>150% első befizetés</td>
                         <td>Jackpot játékok és hűségprogram bőséges jutalmakkal.</td>
-                        <td><a href="https://bonafides.rocks/63944/1261?l=3751" class="cta" target="_blank">Játssz most</a></td>
+                        <td>
+                            <a href="https://bonafides.rocks/63944/1261?l=3751" class="cta" target="_blank">Játssz most</a>
+                            <button class="info-button" onclick="toggleInfo('weiss-info')">Több infó</button>
+                            <div id="weiss-info" class="info-box">
+                                A WEISS Kaszinó 150%-os első befizetési bónuszt kínál. Jackpot játékok és hűségprogram bőséges jutalmakkal vár rád!
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="section">
-            <h2>Counter Strike 2 BÓNUSZOK</h2>
+            <h2>Counter Strike 2 Bónuszok</h2>
             <table>
                 <thead>
                     <tr>
@@ -170,12 +234,18 @@
                 </tbody>
             </table>
         </div>
+        <div class="section">
+            <h2>Streamlabs Merch Store</h2>
+            <p>Támogasd a streamet, és szerezd be saját egyedi termékeinket a <a href="https://streamlabs.com/negroacsaszar/merch" target="_blank" class="cta">Streamlabs Merch Store-ban!</a></p>
+            <p>Találsz pólókat, bögréket, egérpadokat és még sok mást. Nézz körül és támogasd a csatornát!</p>
+        </div>
     </div>
     <footer>
         <p>Kövess engem a közösségi médiában: 
             <a href="https://discord.gg/YmzEfbufXr" target="_blank">Discord</a> | 
             <a href="https://www.instagram.com/markonegroka/" target="_blank">Instagram</a> | 
-            <a href="https://t.me/negromarko" target="_blank">Telegram</a>
+            <a href="https://t.me/negromarko" target="_blank">Telegram</a> | 
+            <a href="https://streamelements.com/negroacsaszar/store" target="_blank">Store</a>
         </p>
     </footer>
 </body>
